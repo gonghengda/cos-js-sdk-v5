@@ -1662,6 +1662,7 @@ function getObjectUrl(params, callback) {
         AuthData.ClientIP && (url += '&clientIP=' + AuthData.ClientIP);
         AuthData.ClientUA && (url += '&clientUA=' + AuthData.ClientUA);
         AuthData.Token && (url += '&token=' + AuthData.Token);
+        alert("url-->"+url)
         setTimeout(function () {
             callback(null, {Url: url});
         });
